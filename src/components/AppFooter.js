@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-no-target-blank */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleNodes, faFacebook, faFireFlameSimple, faPhone } from '@fortawesome/free-solid-svg-icons'
+import {  faFireFlameSimple } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
 import "../css/footer.css"
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhone, FaTwitter } from "react-icons/fa";
