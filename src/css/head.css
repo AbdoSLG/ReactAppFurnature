@@ -1,0 +1,8 @@
+:root {
+   --main-color: #1b4a4d;
+   --alt-color: #6c757d;
+}
+
+.head {
+   background-color: var(--main-color);
+}

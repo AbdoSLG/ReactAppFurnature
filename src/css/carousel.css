@@ -1,0 +1,5 @@
+@media (max-width:843px) {
+   .carousel-inner .left {
+      display: none;
+   }
+}

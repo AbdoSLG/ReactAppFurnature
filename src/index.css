@@ -1,3 +1,9 @@
+
+:root {
+  --main-color: #1b4a4d;
+  --alt-color:#6c757d;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,64 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main-color{
+  color: var(--main-color);
+}
+
+.layout {
+  position: fixed;
+  z-index: 5001;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.layout::after {
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: .6;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+}
+.layout::before {
+  cursor: pointer;
+  content: "X";
+  position: absolute;
+  padding: 5px;
+  color: var(--main-color);
+  font-size: 40px;
+  font-weight: bold;
+  right: 19px;
+  top: 19px;
+  z-index: 6000;
+}
+
+.layout .layout-content {
+  position: absolute;
+  width: 350px;
+  background: white;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  z-index: 5002;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.layout .layout-content.layout-content-links>a {
+  color: var(--main-color) !important;
+}
+
+.btn:hover{
+  background-color: var(--alt-color) !important;
+  color: white !important;
 }

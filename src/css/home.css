@@ -1,0 +1,56 @@
+:root {
+   --main-color: #1b4a4d;
+}
+
+.carousel-inner {
+   width: 87% !important;
+}
+
+.carousel-item {
+   flex-wrap: wrap;
+}
+
+.carousel-item .right,
+.carousel-item .left {
+   min-width: 350px;
+   flex: 1;
+}
+
+#carouselExampleControls {
+   height: 80vh;
+}
+
+.move-right {
+   position: absolute;
+   right: 18px;
+}
+
+.move-left {
+   position: absolute;
+   left: 18px;
+}
+
+h1 {
+   color: var(--main-color);
+}
+
+button.btn {
+   background-color: var(--main-color);
+   color: white;
+}
+
+.banar {
+   width: 320px;
+   overflow: hidden;
+}
+
+.banar:hover img{
+   transform: scale(1.2);
+}
+.banar img {
+   transition: .3s;
+}
+.banar .text {
+   z-index: 5;
+   left: 10px;
+}

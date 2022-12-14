@@ -1,0 +1,12 @@
+
+:root {
+   --main-color: #1b4a4d;
+}
+
+.foot{
+   border-top: 1px solid var(--main-color);
+}
+
+.blog{
+   width: 350px !important;
+}

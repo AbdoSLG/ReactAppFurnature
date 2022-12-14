@@ -1,0 +1,36 @@
+:root {
+   --main-color: #1b4a4d;
+}
+
+.title {
+   border-bottom: 1px solid var(--main-color);
+}
+
+.title h4 {
+   color: var(--main-color);
+}
+
+.title h4,
+.title span {
+   cursor: pointer;
+}
+
+.title span {
+   transition: .3s;
+}
+
+.title span:hover {
+   animation: move-left-right .5s linear infinite;
+}
+
+@keyframes move-left-right {
+
+   0%,
+   100% {
+      transform: translateX(0px);
+   }
+
+   50% {
+      transform: translateX(10px);
+   }
+}
